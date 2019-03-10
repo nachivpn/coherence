@@ -1,12 +1,14 @@
 module CCC where
 
+-- Shamelessly copied from Abel's ITC lecture code here:
+-- https://github.com/InitialTypes/Club/blob/master/lectures/stlc-ccc/src/CCCInternalLanguage.agda
+
 infixl 4 _∘_
 
 data Ty : Set where
   𝟏    : Ty                
   _⇒_ : (a b : Ty) → Ty 
   _*_ :  (a b : Ty) → Ty
-
 
 data Hom : (a b : Ty) → Set where
   id    : ∀ {a} → Hom a a
