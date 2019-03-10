@@ -1,4 +1,4 @@
-module NBE where
+module Coherence where
 
 open import CCC
 
