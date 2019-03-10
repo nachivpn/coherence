@@ -1,7 +1,11 @@
 module CCC where
 
--- Shamelessly copied from Abel's ITC lecture code here:
--- https://github.com/InitialTypes/Club/blob/master/lectures/stlc-ccc/src/CCCInternalLanguage.agda
+{-
+  Shamelessly copied from Abel's ITC lecture code here:
+  https://github.com/InitialTypes/Club/blob/master/lectures/stlc-ccc/src/CCCInternalLanguage.agda
+
+  The CCC of this language is the free CCC spawned from an empty set of base types
+-}
 
 infixl 4 _∘_
 
